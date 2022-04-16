@@ -1,0 +1,177 @@
+@import url('../node_modules/font-awesome/css/font-awesome.css');
+
+html, body {height: 100%;
+    overflow-y: overlay;}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background:  #212424;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(49, 49, 49);
+  }
+
+body {
+    width: 100%;
+    margin: 0;
+    background-image: url("lisa.jpg");  
+    background-repeat: no-repeat;  
+    background-size:  100% 100%;
+    background-position: center;
+    background-color: #212424;
+    background-attachment: fixed;
+    font-family: Helvetica,Arial,sans-serif; 
+}
+
+#content{display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+p{margin: 0;}
+
+.header-name {
+    position: fixed;
+    left: 0;
+    padding-left: 5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    letter-spacing: 7px;
+    font-size: 36px;
+    -webkit-text-stroke: 2px black;
+    font-style: italic;
+}
+
+.header {height: 8%;
+    position: sticky;
+    top:0;
+    padding: 0 3% 0 3%;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 500;
+    background-color:rgba(0, 0, 0, 0.678);
+    display: flex;
+    color: #efefef;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;}
+
+.home, .menu, .contact {
+    width: 109px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 10px 0 10px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.466);
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.home { border-bottom: solid #bbbaba 2px;
+}
+
+.home:hover, .menu:hover, .contact:hover {
+    cursor: pointer;
+}
+
+.footer-content:hover ,.center-content:hover, .header-name:hover {
+    cursor: default;
+}
+
+.center  {    
+    min-height:max-content;
+    height:1826px;
+    display: flex;
+    justify-content: center;
+    color: #efefef;}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    font-size: 36px;
+}
+
+.days1, .days2 {margin: 0;    
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px #000000;
+    -webkit-text-stroke: 2px black;
+    font-weight: bold;
+}
+
+.name {font-size: 90px;
+    letter-spacing: 15px;
+    margin: 0;
+    -webkit-text-stroke: 3px black;
+    text-shadow: 2px 2px 2px #000000;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-style: italic;
+}
+
+.footer {background-color: #0f0f0fa1;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+    color: #efefef;
+    text-shadow: 2px 2px 2px #000000;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.466);
+
+}
+
+@media only screen and (max-width: 620px) {
+
+    .home, .menu, .contact {padding: 5px 0 5px 0;
+        -webkit-text-stroke: 0;}
+
+    .header-name {display:none}
+    html {width: 100%;}
+    body {
+        width: 100%;
+        margin: 0;
+        background-image: url("lisa.jpg");  
+        background-repeat: no-repeat;  
+        background-size:  auto 100%;
+        background-position: center;
+        background-color: #212424;
+        background-attachment: fixed;
+        font-family: Helvetica,Arial,sans-serif; 
+    }
+    .name {font-size: 42px;
+        -webkit-text-stroke: 0;}
+
+    .days1, .days2 {font-size: 20px;
+        -webkit-text-stroke: 0;
+        text-align: center;}
+    
+    .days2 {visibility: hidden;}
+
+    .days1::after {content: " Saturday/Sunday - 12h to 00h"}
+
+    .center-contact {
+        width: 80%;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-info {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .email {letter-spacing: 0}
+}
+
+@import url('menu.css');
+@import url('contact.css')

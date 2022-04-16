@@ -1,0 +1,31 @@
+.center-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.699);
+    width: 40%;
+    height: fit-content;
+    padding: 2%;
+    box-sizing: border-box;
+    letter-spacing: 3px;
+    border-radius: 5px;
+}
+
+.contact-info{background-color: #EFEBEB;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    max-height: fit-content;
+    padding: 4%;
+    font-size: 26px;
+    border-radius: 5px;
+
+}
+
+#emailIcon {width: 22.5px}
+
+.map {height: auto;
+    width: 100%;
+    border-radius: 5px;
+}

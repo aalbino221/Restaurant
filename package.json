@@ -1,0 +1,31 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "Restaurant - Odin Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aalbino221/Restaurant.git"
+  },
+  "author": "Andre <aalbino221@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aalbino221/Restaurant/issues"
+  },
+  "homepage": "https://github.com/aalbino221/Restaurant#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

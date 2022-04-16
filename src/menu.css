@@ -1,0 +1,61 @@
+@import url('../node_modules/font-awesome/css/font-awesome.css');
+
+.center {max-height: fit-content;
+    margin: 2%;}
+
+.center-content-menu {width: 45%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    border-radius: 5px;}
+
+.center-box {background-color: #EFEBEB;
+    max-height: fit-content;
+    margin: 2%;}
+
+.card {height: 150px;
+    color: rgb(46, 46, 46);
+    display: flex;
+    margin: 5%;
+    font-size: 30px;
+    gap: 5%;
+    border-bottom: 2px solid #9b9b9b}
+
+.card-cont {
+    font-size: 18px;
+    color: #524D4D;}
+
+.card-title {
+    margin-bottom: 5%;
+}
+
+img {width: 162px;
+    height: 100px;
+    }
+
+@media only screen and (max-width: 620px) {
+    body {height: 100%}
+
+    .center-content-menu {
+        width: 75%;
+    }
+
+    img {width: 140px;
+        height: 70px;}
+
+    .card-img {margin-right: auto;
+        margin-left: auto;}
+    .card  {font-size: 20px;
+        flex-direction: column;
+        text-align: center;}
+
+    .card-cont {font-size: 10px;}        
+}
+
+    .footer {margin-top: auto;
+        width: 100%;}
