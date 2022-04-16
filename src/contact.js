@@ -1,3 +1,5 @@
+import mapa from './imgs/mapa.png'
+
 const contactInit = function () {
     const center = document.querySelector(".center");
 
@@ -24,7 +26,10 @@ const contactInit = function () {
 
     let contactMap = document.createElement("div");
     contactMap.classList.add("contact-map");
-    contactMap.innerHTML = '<img class ="map" src="../src/imgs/mapa.png">';
+    let map = new Image();
+    map.classList.add("map")
+    map.src = mapa;
+    contactMap.append(map);
 
     centerContact.append(contactInfo);
     centerContact.append(contactMap);

@@ -1,3 +1,9 @@
+import pizza from './imgs/pizza.jpg';
+import risotto from './imgs/risotto.jpg';
+import lasagna from './imgs/lasagna.jpg';
+import pep from './imgs/pep.jpg';
+import gnochi from './imgs/gnochi.jpg';
+
 const centerMenu = function () {
 
     function card (title, content, imgRoute ) {
@@ -19,8 +25,10 @@ const centerMenu = function () {
     
         let cardImg = document.createElement("div");
         cardImg.classList.add("card-img");
-        cardImg.innerHTML = imgRoute;
-    
+        let img = new Image();
+        img.src  = imgRoute;
+        cardImg.append(img);
+
         cardText.append(cardTitle);
         cardText.append(cardCont);
         card.append(cardText);
@@ -38,11 +46,11 @@ const centerMenu = function () {
     box.classList.add("center-box");
     contMenu.append(box)
 
-    card("Italian Pizza","San Marzano tomato sauce, fresh mozzarella, grated parmesan and pepperoni from Il Mondo Vecchio",' <img src="../src/imgs/pizza.jpg"> ');
-    card("Risotto","San Marzano tomato sauce, fresh mozzarella, grated parmesan and pepperoni from Il Mondo Vecchio", ' <img src="../src/imgs/risotto.jpg">');
-    card("Lasagna","San Marzano tomato sauce, fresh mozzarella, grated parmesan and pepperoni from Il Mondo Vecchio", ' <img src="../src/imgs/lasagna.jpg">');
-    card("Pepperoni Pizza","San Marzano tomato sauce, fresh mozzarella, grated parmesan and pepperoni from Walmart", ' <img src="../src/imgs/pep.jpg">');
-    card("Gnocchi","San Marzano tomato sauce, fresh mozzarella, grated parmesan and onions", ' <img src="../src/imgs/gnochi.jpg">');
+    card("Italian Pizza","San Marzano tomato sauce, fresh mozzarella, grated parmesan and pepperoni from Il Mondo Vecchio", pizza);
+    card("Risotto","San Marzano tomato sauce, fresh mozzarella, grated parmesan and pepperoni from Il Mondo Vecchio", risotto);
+    card("Lasagna","San Marzano tomato sauce, fresh mozzarella, grated parmesan and pepperoni from Il Mondo Vecchio", lasagna);
+    card("Pepperoni Pizza","San Marzano tomato sauce, fresh mozzarella, grated parmesan and pepperoni from Walmart", pep);
+    card("Gnocchi","San Marzano tomato sauce, fresh mozzarella, grated parmesan and onions", gnochi);
 
 };
 
